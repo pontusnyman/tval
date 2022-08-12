@@ -502,3 +502,35 @@ input, textarea {
         height: 200px;
     }
 }
+@media screen and (max-width: 450px) {
+    .menu {
+        padding: 0;
+    }
+    .hero img {
+        width: 100%;
+    }
+    .helpu {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .omoss img {
+        width: 300px;
+    }
+    .omoss {
+        width: 100%;
+    }
+    .service .button {
+        width: 200px;
+    }
+    .service::before {
+        height: 1420px;
+    }
+    .kvaliteter {
+        width: 100%;
+        padding: 0 20px;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
