@@ -1,0 +1,504 @@
+.light {
+    --standard_color: #CB0767;
+    --second_color: #E097AA;
+    --background: #ffff;
+}
+
+.dark {
+    --standard_color: #CAABE3;
+    --second_color: #CDC8EE;
+    --background: #ffff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+.menu {
+    padding: 20px 100px;
+}
+
+nav i {
+    margin-right: 20px;
+    color: var(--second_color);
+}
+
+.nav-link {
+    color: var(--second_color);
+}
+
+a.nav-link.active, a.nav-link:hover {
+    color: var(--standard_color)!important;
+}
+
+.navbar-toggler {
+    border: var(--bs-border-width) solid var(--second_color);
+    color: var(--second_color);
+}
+
+.btn-pink{
+    background-color: var(--standard_color);
+    color: var(--background);
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+}
+
+.hero {
+    padding: 40px 100px 20px 100px;
+    margin-top: 10px 0 50px 0;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-family: 'Montserrat';
+    font-size: 55px;
+    line-height: 65px;
+    color: var(--standard_color);
+    font-weight: 700;
+    text-align: left;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    color: var(--standard_color);
+}
+
+.hero img {
+    width: 600px;
+    z-index: -1;
+}
+
+.hero span {
+    font-style: italic;
+}
+
+.hero .button {
+    margin-top: 50px;
+    background-color: var(--standard_color);
+    color: var(--background);
+    border: none;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+}
+
+.service {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    min-height: 35vh;
+    margin-bottom: 150px;
+}
+
+.service::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 424px;
+    background-color: var(--second_color);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.service h2, .kvaliteter h2 {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: bold;
+    color: var(--standard_color);
+    margin-bottom: 5px;
+}
+
+.service p, .kvaliteter p {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    color: var(--standard_color);
+}
+
+.service .button {
+    margin-top: 50px;
+    background-color: transparent;
+    color: var(--standard_color);
+    border: 2px solid var(--standard_color);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    min-width: 300px;
+}
+
+.treboxar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.treboxar .frame {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #010101;
+    background-color: var(--background);
+    box-shadow: 0px 10px 36px rgba(18, 78, 120, 0.08);
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.treboxar h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.treboxar p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.treboxar .frame i {
+    color: var(--second_color);
+}
+
+.kontakt {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 30vh;
+    padding-top: 60px;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.kvaliteter {
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    z-index: 100;
+}
+
+.kvaliteter::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 424px;
+    background-color: var(--second_color);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -150px;
+    z-index: -10;
+    border-radius: 10px;
+}
+
+.kvaliteter h5 {
+    font-size: 2.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.kvaliteter .boxar {
+    z-index: 101;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 500px;
+    padding: 40px 20px;
+    /* eventuellt lägga in */
+    min-height: 200px;
+    margin: 20px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0px 10px 36px rgba(18, 78, 120, 0.08);
+    background-color: var(--background);
+    z-index: 102;
+}
+
+.box i {
+    color: var(--second_color);
+}
+
+.box h3 {
+    font-size: 1.3rem;
+    color: var(--standard_color);
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.box p {
+    font-size: 1.0rem;
+    font-weight: 500;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.helpu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+    width: 700px;
+    background-color: var(--background);
+    border-radius: 10px;
+}
+
+.helpu .button {
+    background-color: var(--standard_color);
+    color: var(--background);
+    border: none;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+}
+
+.helpu h2 {
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--standard_color);
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+}
+.helpu p {
+    font-size: inherit;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin: 0;
+}
+
+.brush {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.omoss {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 55vh;
+    background-color: var(--background-color);
+}
+
+.omoss img {
+    border-radius: 10px;
+    width: 400px;
+}
+
+.omoss p, .omoss h2 {
+    color: var(--second_color);
+    width: 350px;
+}
+
+.omoss .button {
+    text-align: center;
+    widows: 100px;
+    padding: 15px;
+    background-color: var(--background);
+    border: 2px solid var(--standard_color);
+    border-radius: 10px;
+    color: var(--second_color);
+    width: 200px;
+    cursor: pointer;
+}
+
+.omoss::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 80px;
+    background-color: var(--second_color);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+footer {
+    background: #f9f9f9;
+    padding: 70px 0 30px 0;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    text-align: left;
+    color: var(--second_color);
+
+}
+
+footer h6 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+footer i {
+    margin: 40px 10px 20px 10px;
+}
+
+.webb46 {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    background: #f9f9f9;
+    color: var(--second_color);
+    padding: 20px;
+}
+ a {
+    color: var(--second_color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--standard_color);
+}
+
+/* Kontakt formulär */
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.inputbox {
+    margin-top: 20px;
+    background-color: var(--background);
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 36px rgba(18, 78, 120, 0.08);
+}
+
+.location {
+    box-shadow: 0px 10px 36px rgba(18, 78, 120, 0.08);
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+
+@media screen and (max-width: 1350px) {
+    .kvaliteter .boxar {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 600px
+    }
+    .treboxar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    .service::before {
+        height: 1355px;
+    }
+    .helpu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 20px;
+        width: 600px;
+        background-color: var(--background);
+        border-radius: 10px;
+    }
+    .omoss {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 75vh;
+    }
+
+    .omoss .button {
+        margin-bottom: 30px;
+    }
+
+    .omoss img {
+        margin-bottom: 20px;
+    }
+
+    .omoss::before {
+        height: 200px;
+    }
+}
