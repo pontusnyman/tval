@@ -507,6 +507,7 @@ input, textarea {
         padding: 0;
     }
     .hero img {
+        margin: 30px 0;
         width: 100%;
     }
     .helpu {
